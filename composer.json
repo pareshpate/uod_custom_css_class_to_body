@@ -4,20 +4,12 @@
     "description": "UOD Custom CSS Class to Body Drupal custom module.",
     "license": "proprietary",
     "homepage": "https://github.com/pareshpate/uod_custom_css_class_to_body",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
     "authors": [
         {
             "name": "Paresh Patel",
             "email": "paresh8205@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "php": ">=7.4",
         "composer/installers": "^1.2",
@@ -27,15 +19,5 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "drupal/select2": "^1.14",
         "npm-asset/select2": "^4.0"
-    },
-    "extra": {
-        "installer-paths": {
-            "web/libraries/{$name}": [
-              "type:drupal-library",
-              "type:bower-asset",
-              "type:npm-asset"
-            ]
-        },
-        "installer-types": ["bower-asset", "npm-asset", "drupal-library"]
     }
 }
