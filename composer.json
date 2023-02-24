@@ -16,6 +16,8 @@
             "email": "paresh8205@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=7.4",
         "composer/installers": "^1.2",
@@ -27,16 +29,6 @@
         "npm-asset/select2": "^4.0"
     },
     "extra": {
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/libraries/{$name}": [
-              "type:drupal-library",
-              "type:bower-asset",
-              "type:npm-asset"
-            ]
-        },
         "installer-types": ["bower-asset", "npm-asset", "drupal-library"]
     }
 }
