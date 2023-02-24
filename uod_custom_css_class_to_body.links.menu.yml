@@ -1,0 +1,6 @@
+uod_custom_css_class_to_body.settings_form:
+  title: 'Custom CSS Class to Body Settings'
+  description: 'Configure Custom CSS Class to Body.'
+  parent: system.admin_config_system
+  route_name: uod_custom_css_class_to_body.settings_form
+  weight: 10

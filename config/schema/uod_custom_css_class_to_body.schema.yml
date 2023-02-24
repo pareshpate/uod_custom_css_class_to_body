@@ -1,0 +1,11 @@
+# Schema for the configuration files of the Custom CSS Class to Body module.
+uod_custom_css_class_to_body.settings:
+  type: config_object
+  label: 'Custom CSS Class to Body settings'
+  mapping:
+    body_class:
+      type: string
+      label: 'Body CSS Class'
+    pages:
+      type: sequence
+      label: 'Pages'

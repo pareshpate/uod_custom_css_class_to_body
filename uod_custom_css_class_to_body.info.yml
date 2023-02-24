@@ -1,0 +1,8 @@
+name: Custom CSS Class to Body
+type: module
+description: Attach CSS class or classes to the body tag of the front-end page(s).
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:config
+  - drupal:select2
