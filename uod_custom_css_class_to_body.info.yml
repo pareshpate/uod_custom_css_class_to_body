@@ -6,3 +6,4 @@ core_version_requirement: ^9 || ^10
 dependencies:
   - drupal:config
   - drupal:select2
+configure: uod_custom_css_class_to_body.settings_form

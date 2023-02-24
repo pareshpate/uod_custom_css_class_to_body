@@ -4,6 +4,7 @@ namespace Drupal\uod_custom_css_class_to_body\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Cache\Cache;
 
 /**
  * Configure Custom CSS Class to Body settings for this site.
@@ -62,6 +63,15 @@ class SettingsForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $pages_value = $form_state->getValue('pages');
     $pages = array_column($pages_value, 'target_id');
+    $old_pages = $this->config('uod_custom_css_class_to_body.settings')->get('pages');
+    $invalidate_pages = array_merge($old_pages, $pages);
+
+    // To invalidate the cache of old/new pages.
+    foreach ($invalidate_pages as $nid) {
+      $tags = ['node:' . $nid];
+      Cache::invalidateTags($tags);
+    }
+
     $this->config('uod_custom_css_class_to_body.settings')
       ->set('body_class', $form_state->getValue('body_class'))
       ->set('pages', $pages)
