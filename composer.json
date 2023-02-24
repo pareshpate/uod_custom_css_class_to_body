@@ -1,0 +1,23 @@
+{
+    "name": "pareshpate/uod_custom_css_class_to_body",
+    "type": "drupal-custom-module",
+    "description": "UOD Custom CSS Class to Body Drupal custom module.",
+    "license": "proprietary",
+    "homepage": "https://github.com/pareshpate/uod_custom_css_class_to_body",
+    "authors": [
+        {
+            "name": "Paresh Patel",
+            "email": "paresh8205@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.2",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "drupal/select2": "^1.14",
+        "npm-asset/select2": "^4.0"
+    }
+}

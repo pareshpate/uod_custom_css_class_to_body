@@ -1,0 +1,7 @@
+uod_custom_css_class_to_body.settings_form:
+  path: '/admin/config/system/uod-custom-css-class-to-body'
+  defaults:
+    _title: 'Custom CSS Class to Body settings'
+    _form: 'Drupal\uod_custom_css_class_to_body\Form\SettingsForm'
+  requirements:
+    _permission: 'authenticated uod_custom_css_class_to_body configuration'
